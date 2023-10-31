@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>J気象サービス - ホームページ</title>
+        <title>Japan気象サービス|ホームページ</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="地震情報,気象情報,日本の地震情報,日本の気象情報,Japan気象サービス">
         <meta name="description" content="日本各地の気象情報、地震情報を掲載しています。">
@@ -184,7 +184,25 @@
                   </nav>
             
             </header>
-                  <h2 style="margin-top: -220px;">地震の情報を提供するサイトです。</h2>
+            <header id="header_pc">
+                <div style="display:flex; background-color:white;">
+                    <ul class="nav_list" style="padding-top: 70px; margin-top: 0px;font-size: 30px;"> 
+                        <li class="nav_item1" id="fontchange1" style="display: block; text-align: center; padding-bottom: 20px;">-メニュー-</li>
+                     <li class="nav_item1" id="fontchange2 nav-id1"><a id="fontchange2"  href="https://jkisyou.com">ホーム</a></li>
+                    <li class="nav_item1" id="fontchange2 nav-id2"><a id="fontchange2"  href="https://business.jkisyou.com">サービス情報</a></li>
+                    <li class="nav_item2" id="fontchange2 nav-id3"><a id="fontchange2"  href="https://earthquake.jkisyou.com" style="font-size: 30px;">地震情報</a></li>
+                    <li class="nav_item3" id="fontchange2 nav-id5"><a id="fontchange2"  href="https://document.jkisyou.com">各種資料・データ</a></li>
+                    <li class="nav_item3" id="fontchange2 nav-id6"><a id="fontchange2"  href="https://inquire.jkisyou.com">お問い合わせ</a></li>
+                    <li class="nav_item4" id="fontchange2 nav-id7"><a id="fontchange2"  href="https://agreement.jkisyou.com">利用規約</a></li>
+                    <li class="nav_item6" id="fontchange2 nav-id9"><a id="fontchange2"  href="https://elive.jkisyou.com">大規模地震配信</a></li>
+                      <script>
+                        $('div.flex').click(function() {
+                        location.href = $(this).find('a').attr('href');
+                        });
+                        </script>
+                    </ul>
+                </div>
+            </header>
         </header>
         <div class="inner-block" style="height: auto;">
           <div class="product-list">
