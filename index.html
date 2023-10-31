@@ -35,6 +35,16 @@
     }
         </style>
         <style>
+            #header{
+                display:none;
+            }
+            #header pc{
+                display:block;
+            }
+            @media screen and (max-width:480px) { 
+            #header{
+                display:block;
+            }
             /* ここから下がハンバーガーメニューに関するCSS */
     
   /* チェックボックスを非表示にする */
@@ -134,7 +144,6 @@
   #drawer_input:checked ~ .nav_content {
     left: 0;/* メニューを画面に入れる */
   }
-            @media screen and (max-width:480px) { 
             header{
                 width: 100%;
                 height: 300px;
@@ -142,6 +151,9 @@
                 background-size: cover;
                 background-position: center;
             }
+                #headerpc{
+                    display:none;
+                }
                 }
         </style>
     </head>
@@ -150,7 +162,7 @@
         </div>
     <div class="N">
         <header>
-            <header class="header">
+            <header class="header" style="height:130px;">
                 <!-- ヘッダーロゴ -->
                 <div class="logo"></div>
               
@@ -185,16 +197,15 @@
             
             </header>
             <header id="header_pc">
-                <div style="display:flex; background-color:white;">
-                    <ul class="nav_list" style="padding-top: 70px; margin-top: 0px;font-size: 30px;"> 
-                        <li class="nav_item1" id="fontchange1" style="display: block; text-align: center; padding-bottom: 20px;">-メニュー-</li>
-                     <li class="nav_item1" id="fontchange2 nav-id1"><a id="fontchange2"  href="https://jkisyou.com">ホーム</a></li>
-                    <li class="nav_item1" id="fontchange2 nav-id2"><a id="fontchange2"  href="https://business.jkisyou.com">サービス情報</a></li>
-                    <li class="nav_item2" id="fontchange2 nav-id3"><a id="fontchange2"  href="https://earthquake.jkisyou.com" style="font-size: 30px;">地震情報</a></li>
-                    <li class="nav_item3" id="fontchange2 nav-id5"><a id="fontchange2"  href="https://document.jkisyou.com">各種資料・データ</a></li>
-                    <li class="nav_item3" id="fontchange2 nav-id6"><a id="fontchange2"  href="https://inquire.jkisyou.com">お問い合わせ</a></li>
-                    <li class="nav_item4" id="fontchange2 nav-id7"><a id="fontchange2"  href="https://agreement.jkisyou.com">利用規約</a></li>
-                    <li class="nav_item6" id="fontchange2 nav-id9"><a id="fontchange2"  href="https://elive.jkisyou.com">大規模地震配信</a></li>
+                <div style="background-color:#0087ff80;">
+                    <ul class="nav_list" style="padding-top: 20px; margin-top: 0px;font-size: 20px; display: flex;"> 
+                     <li class="nav_item1" id="fontchange2 nav-id1" style=" margin-right: 15px"><a id="fontchange2"  href="https://jkisyou.com">ホーム</a></li>
+                    <li class="nav_item1" id="fontchange2 nav-id2" style=" margin-right: 15px"><a id="fontchange2"  href="https://business.jkisyou.com">サービス情報</a></li>
+                    <li class="nav_item2" id="fontchange2 nav-id3" style=" margin-right: 15px"><a id="fontchange2"  href="https://earthquake.jkisyou.com" style="font-size: 20px;">地震情報</a></li>
+                    <li class="nav_item3" id="fontchange2 nav-id5" style=" margin-right: 15px"><a id="fontchange2"  href="https://document.jkisyou.com">各種資料・データ</a></li>
+                    <li class="nav_item3" id="fontchange2 nav-id6" style=" margin-right: 15px"><a id="fontchange2"  href="https://inquire.jkisyou.com">お問い合わせ</a></li>
+                    <li class="nav_item4" id="fontchange2 nav-id7" style=" margin-right: 15px"><a id="fontchange2"  href="https://agreement.jkisyou.com">利用規約</a></li>
+                    <li class="nav_item6" id="fontchange2 nav-id9" style=" margin-right: 15px"><a id="fontchange2"  href="https://elive.jkisyou.com">大規模地震配信</a></li>
                       <script>
                         $('div.flex').click(function() {
                         location.href = $(this).find('a').attr('href');
