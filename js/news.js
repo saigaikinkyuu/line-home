@@ -60,7 +60,7 @@ function fetchData() {
           }else{
             icon_element.textContent = "campaign"
           }
-          clone_element.querySelector('.time_l1').replaceWith(time_l1_element);
+          clone_element.querySelector('.material-symbols-outlined').replaceWith(icon_element);
 
           var letter2_element = document.createElement('p');
 letter2_element.classList.add('letter2');
