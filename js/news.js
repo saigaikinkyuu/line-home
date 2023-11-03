@@ -55,6 +55,8 @@ function fetchData() {
           icon_element.textContent = "error";
           }else if(json[i].letter1 === "【更新】"){
           icon_element.textContent = "update";
+          }else if(json[i].letter1 === "【お詫び】"){
+          icon_element.textContent = "priority_high";
           }else{
             icon_element.textContent = "campaign"
           }
