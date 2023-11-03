@@ -34,7 +34,12 @@ function fetchData() {
             
           var clone_element = base_element.cloneNode(true);
           clone_element.classList.remove('js-based');
+          if(t === 1){
           clone_element.classList.add('show');
+          }else {
+          clone_element.classList.add('show');
+          clone_element.classList.add('none_text');
+          }
 
           var time_l1_element = document.createElement('p');
           time_l1_element.classList.add('time_l1');
