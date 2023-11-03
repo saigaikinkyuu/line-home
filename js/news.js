@@ -40,6 +40,25 @@ function fetchData() {
           time_l1_element.classList.add('time_l1');
           time_l1_element.textContent = formattedTime + json[i].letter1;
           clone_element.querySelector('.time_l1').replaceWith(time_l1_element);
+          
+          var icon_element = document.createElement('span');
+          icon_element.classList.add('material-symbols-outlined');
+          if(json[i].letter1 === "【障害】"){
+          icon_element.textContent = "cancel_presentation";
+          }else if(json[i].letter1 === "【アップデート情報】"||json[i].letter1 === "【メンテナンス情報】"){
+          icon_element.textContent = "rotate_left";
+          }else if(json[i].letter1 === "【復旧】"){
+          icon_element.textContent = "mark_chat_read";
+          }else if(json[i].letter1 === "【重要】"){
+          icon_element.textContent = "announcement";
+          }else if(json[i].letter1 === "【緊急】"){
+          icon_element.textContent = "error";
+          }else if(json[i].letter1 === "【更新】"){
+          icon_element.textContent = "update";
+          }else{
+            icon_element.textContent = "campaign"
+          }
+          clone_element.querySelector('.time_l1').replaceWith(time_l1_element);
 
           var letter2_element = document.createElement('p');
 letter2_element.classList.add('letter2');
