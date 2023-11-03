@@ -5,7 +5,7 @@ $(function () {
     // 最初に表示させるliの数
     let num = 1,
       // 閉じた時に表示させるliの数
-      closeNum = num - 1;
+      closeNum = num;
     // 最初はもっと見るボタン表示、閉じるボタン非表示
     $(this).find(".js-btn-more").show();
     $(this).find(".js-btn-close").hide();
@@ -16,7 +16,7 @@ $(function () {
     // もっと見るボタンがクリックされた時
     $(".js-btn-more").click(function () {
       // numに+5ずつしていく = 5行ずつ追加する
-      num += 4;
+      num += 5;
       $(this)
         .parent()
         .find("li:lt(" + num + ")")
