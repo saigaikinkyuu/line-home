@@ -36,15 +36,10 @@ function fetchData() {
           clone_element.classList.remove('js-based');
           clone_element.classList.add('show');
 
-          var time_element = document.createElement('p');
-          time_element.classList.add('time');
-          time_element.textContent = formattedTime;
-          clone_element.querySelector('.time').replaceWith(time_element);
-
-          var letter1_element = document.createElement('p');
-          letter1_element.classList.add('letter1');
-          letter1_element.textContent = json[i].letter1;
-          clone_element.querySelector('.letter1').replaceWith(letter1_element);
+          var time_l1_element = document.createElement('p');
+          time_l1_element.classList.add('time_l1');
+          time_l1_element.textContent = formattedTime + json[i].letter1;
+          clone_element.querySelector('.time_l1').replaceWith(time_l1_element);
 
           var letter2_element = document.createElement('p');
 letter2_element.classList.add('letter2');
@@ -60,8 +55,6 @@ if (json[i].letter2.includes('ホーム')) {
     letter3_element.href = 'https://jkisyou.com';
 }else if (json[i].letter2.includes('地震情報掲載ページ')) {
     letter3_element.href = 'https://earthquake.kisyou.com';
-}else if (json[i].letter2.includes('避難情報・気象警報')) {
-    letter3_element.href = 'https://weather.jkisyou.com';
 }else if (json[i].letter2.includes('利用規約')) {
     letter3_element.href = 'https://agreement.jkisyou.com';
 }else if (json[i].letter2.includes('大規模地震配信')) {
