@@ -89,6 +89,8 @@ if (json[i].letter2.includes('ホーム')) {
     letter3_element.href = 'https://jalert.jkisyou.com';
 }else if (json[i].letter2.includes('業務情報ページ')) {
     letter3_element.href = 'https://business.jkisyou.com';
+}else if (json[i].letter2.includes('各種資料・データ')) {
+    letter3_element.href = 'https://document.jkisyou.com';
 }else {
     letter3_element.href = 'https://saigaikinkyuu.github.io/site-homepage-404/';
 }
