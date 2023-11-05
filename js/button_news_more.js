@@ -7,12 +7,12 @@ $(function () {
       // 閉じた時に表示させるliの数
       closeNum = num;
     // 最初はもっと見るボタン表示、閉じるボタン非表示
+    $(this).find(".js-btn-more").show();
+    $(this).find(".js-btn-close").hide();
     // 5行目まで表示
     $(this)
       .find("li:not(:lt(" + num + "))")
       .hide();
-    $(this).find(".js-btn-more").show();
-    $(this).find(".js-btn-close").hide();
     // もっと見るボタンがクリックされた時
     $(".js-btn-more").click(function () {
       // numに+5ずつしていく = 5行ずつ追加する
