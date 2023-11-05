@@ -79,7 +79,7 @@ letter3_element.id = 'time' + t;
 letter3_element.textContent = '詳しく見る';
 if (json[i].letter2.includes('ホーム')) {
     letter3_element.href = 'https://jkisyou.com';
-}else if (json[i].letter2.includes('地震情報掲載ページ')) {
+}else if (json[i].letter2.includes('地震情報ページ')) {
     letter3_element.href = 'https://earthquake.kisyou.com';
 }else if (json[i].letter2.includes('利用規約')) {
     letter3_element.href = 'https://agreement.jkisyou.com';
