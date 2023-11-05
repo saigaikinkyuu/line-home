@@ -80,7 +80,7 @@ letter3_element.textContent = '詳しく見る';
 if (json[i].letter2.includes('ホーム')) {
     letter3_element.href = 'https://jkisyou.com';
 }else if (json[i].letter2.includes('地震情報ページ')) {
-    letter3_element.href = 'https://earthquake.kisyou.com';
+    letter3_element.href = 'https://earthquake.jkisyou.com';
 }else if (json[i].letter2.includes('利用規約')) {
     letter3_element.href = 'https://agreement.jkisyou.com';
 }else if (json[i].letter2.includes('大規模地震配信')) {
