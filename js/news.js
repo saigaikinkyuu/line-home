@@ -1,4 +1,4 @@
-let apiContent = ""
+var apiContent = ""
 function fetchData() {
   var api_url = 'https://script.google.com/macros/s/AKfycbwSmhocawGOXs-e0cdiJ_HhkThItCl6U6qBCpBY8xRs8UUAZHwDWZ1BSFR6MCX-SVcWVw/exec';
 
