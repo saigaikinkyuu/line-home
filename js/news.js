@@ -139,7 +139,7 @@ function closeTable () {
     // 最初に表示させるliの数
     let num = 1,
       // 閉じた時に表示させるliの数
-    let closeNum = 1;
+    closeNum = 1;
           $(this)
             .parent()
             .find("li:gt(" + closeNum + ")")
