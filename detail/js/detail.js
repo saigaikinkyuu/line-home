@@ -24,9 +24,9 @@ function showInfo() {
       var hours = date.getHours().toString().padStart(2, '0');
       var minutes = date.getMinutes().toString().padStart(2, '0');
       var formattedTime = month + '月' + day + '日 ' + hours + ':' + minutes;
-      document.getElemenById("date").innerHTML = formattedTime
-      document.getElemenById("title").innerHTML = json[Number(i)].letter1 + " " + json[Number(i)].letter2
-      document.getElemenById("body").innerHTML = json[Number(i)].body
+      document.getElementById("date").innerHTML = formattedTime
+      document.getElementById("title").innerHTML = json[Number(i)].letter1 + " " + json[Number(i)].letter2
+      document.getElementById("body").innerHTML = json[Number(i)].body
     })
 }
 showInfo()
