@@ -29,3 +29,4 @@ function showInfo() {
       document.getElemenById("body").innerHTML = json[Number(i)].body
     })
 }
+showInfo()
