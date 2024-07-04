@@ -132,7 +132,26 @@ for (var i = 0; i < elements.length; i++) {
       }
     });
 }            
-
+function closeTable () {
+  // liの数を取得
+  const listItems = $("#product-table li").length;
+  $("#product-table").each(function () {
+    // 最初に表示させるliの数
+    let num = 1,
+      // 閉じた時に表示させるliの数
+    let closeNum = 1;
+          $(this)
+            .parent()
+            .find("li:gt(" + closeNum + ")")
+            // 6行目以降は非表示
+            .slideUp();
+          // 閉じるボタンを非表示
+          $(this).hide();
+          // もっと見るボタン表示に
+          $(".js-btn-more").show();
+      }
+    });
+  };
 
 // 初回実行
 fetchData();
