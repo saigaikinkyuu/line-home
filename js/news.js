@@ -149,9 +149,8 @@ function closeTable () {
           $(this).hide();
           // もっと見るボタン表示に
           $(".js-btn-more").show();
-      }
-    });
-  };
+      })
+    };
 
 // 初回実行
 fetchData();
