@@ -79,7 +79,7 @@ var letter3_element = document.createElement('a');
 letter3_element.classList.add('letter3');
 letter3_element.id = 'time' + t;
 letter3_element.textContent = '詳しく見る';
-letter3_element.href = 'https://jkisyou.com/detail.html?n=' + i;
+letter3_element.href = 'https://jkisyou.com/detail/detail.html?n=' + i;
 clone_element.querySelector('.letter3').replaceWith(letter3_element);
 
 
