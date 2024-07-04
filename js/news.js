@@ -1,3 +1,4 @@
+let apiContent = ""
 function fetchData() {
   var api_url = 'https://script.google.com/macros/s/AKfycbwSmhocawGOXs-e0cdiJ_HhkThItCl6U6qBCpBY8xRs8UUAZHwDWZ1BSFR6MCX-SVcWVw/exec';
 
@@ -6,6 +7,7 @@ function fetchData() {
       return fetch_data.json();
     })
     .then(function(json) {
+      function tableChange(){
       var base_element = document.querySelector('.product-item.js-based');
       var table_body = document.getElementById('product-table');
         let t = 0
@@ -119,9 +121,15 @@ for (var i = 0; i < elements.length; i++) {
   var element = elements[i];
   element.style.display = '';
             }
-
-
-
+      }
+      if(apiContent !== ""){
+      if(apiContent !== json){
+        tableChange()
+      }
+      }else {
+        apiContent = json
+        tableChange()
+      }
     });
 }            
 
