@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Wather Mail|ホームページ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="地震情報,気象情報,日本の地震情報,日本の気象情報,Japan気象サービス">
+        <meta name="description" content="日本各地の気象情報、地震情報を掲載しています。">
+        <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
+        <meta name="msapplication-square150x150logo" content="./favicon/site-tile-150x150.png">
+        <meta name="msapplication-wide310x150logo" content="./favicon/site-tile-310x150.png">
+        <meta name="msapplication-square310x310logo" content="./favicon/site-tile-310x310.png">
+        <meta name="msapplication-TileColor" content="#0078d7">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="36x36" href="./favicon/android-chrome-36x36.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="./favicon/android-chrome-48x48.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="./favicon/android-chrome-72x72.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon/android-chrome-96x96.png">
+        <link rel="icon" type="image/png" sizes="128x128" href="./favicon/android-chrome-128x128.png">
+        <link rel="icon" type="image/png" sizes="144x144" href="./favicon/android-chrome-144x144.png">
+        <link rel="icon" type="image/png" sizes="152x152" href="./favicon/android-chrome-152x152.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="256x256" href="./favicon/android-chrome-256x256.png">
+        <link rel="icon" type="image/png" sizes="384x384" href="./favicon/android-chrome-384x384.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="./favicon/android-chrome-512x512.png">
+        <link rel="icon" type="image/png" sizes="36x36" href="./favicon/icon-36x36.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="./favicon/icon-48x48.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="./favicon/icon-72x72.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon/icon-96x96.png">
+        <link rel="icon" type="image/png" sizes="128x128" href="./favicon/icon-128x128.png">
+        <link rel="icon" type="image/png" sizes="144x144" href="./favicon/icon-144x144.png">
+        <link rel="icon" type="image/png" sizes="152x152" href="./favicon/icon-152x152.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="./favicon/icon-160x160.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./favicon/icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="196x196" href="./favicon/icon-196x196.png">
+        <link rel="icon" type="image/png" sizes="256x256" href="./favicon/icon-256x256.png">
+        <link rel="icon" type="image/png" sizes="384x384" href="./favicon/icon-384x384.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="./favicon/icon-512x512.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/icon-16x16.png">
+        <link rel="icon" type="image/png" sizes="24x24" href="./favicon/icon-24x24.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/icon-32x32.png">
+        <link rel="manifest" href="./favicon/manifest.json">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@700&family=Cherry+Bomb+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;700&family=Cherry+Bomb+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
+        <script type="application/ld+json">
+            {
+            "@context" : "http://schema.org",
+            "@type" : "WebSite",
+            "name" : "Japan気象サービス",
+            "url" : "https://jkisyou.com/"
+            }
+        </script>
+        <style>
+            #fontchange2{
+                font-family: 'Zen Maru Gothic', sans-serif;
+            }
+            * :not(#fontchange2,span,.letter2){
+                font-family: 'BIZ UDPGothic', sans-serif;
+            }
+            .letter2{
+                font-family: 'IBM Plex Sans JP', sans-serif;
+            }
+        </style>
+        <style>
+            .letter3{
+                color: blue;
+            }
+            .menu::before {
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+            .content_item1_flex{
+                display: flex;
+            }
+            .content_item1_flex .image{
+                width: 40%; /*画像サイズ指定*/
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .content_item1_flex .right{
+                margin: 0 0 0 20px;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                font-size: 30px;
+            }
+            .show{                
+                padding: 0.5em 1em;
+                margin: 2em 0;
+                color: #232323;
+                background: #fff8e8;
+                border-left: solid 10px #ffc06e;
+                }
+            .none_text{
+                display: none;
+                }
+            .material-symbols-outlined{
+                text-align: left;
+                font-size: 40px;
+            }
+            .header{
+                display:none;
+            }
+            #header_pc{
+                display:block;
+            }
+            .js-btn-more a {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 200px;
+                padding: 10px 25px;
+                color: #313131;
+                transition: 0.3s ease-in-out;
+                font-weight: 600;
+            }
+            .js-btn-more a:before {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: rgba(0,0,0,.1);
+                transform: translateX(-50%);
+            }
+            .js-btn-more a:after {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #000;
+                transform: scale(0, 1);
+                transform-origin: left top;
+                transition: transform .3s;
+            }
+            .js-btn-more a:hover {
+                opacity: 0.7;
+            }
+            .js-btn-more a:hover:after {
+                transform: scale(1, 1);
+            }
+            
+            .js-btn-close a {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 200px;
+                padding: 10px 25px;
+                color: #313131;
+                transition: 0.3s ease-in-out;
+                font-weight: 600;
+            }
+            .js-btn-close a:before {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: rgba(0,0,0,.1);
+                transform: translateX(-50%);
+            }
+            .js-btn-close a:after {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #000;
+                transform: scale(0, 1);
+                transform-origin: left top;
+                transition: transform .3s;
+            }
+            .js-btn-close a:hover {
+                opacity: 0.7;
+            }
+            .js-btn-close a:hover:after {
+                transform: scale(1, 1);
+            }
+            @media screen and (min-width: 700px) and (max-width: 1085px) {
+                .image {
+                    width: 90%!important;
+                }
+                .right {
+                    width: 50%!important;
+                }
+            }
+            @media screen and (max-width:480px) { 
+            .right{
+                padding-bottom: 5px;
+            }
+            .content_item1_flex{
+                display: block;
+            }
+            .content_item1_flex .image{
+                width: 40%; /*画像サイズ指定*/
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            .content_item1_flex .right{
+                font-size: 20px;
+            }
+            .header{
+                display:block;
+            }
+                #header_pc{
+                    display:none;
+                }
+            /* ここから下がハンバーガーメニューに関するCSS */
+    
+  /* チェックボックスを非表示にする */
+  .drawer_hidden {
+    display: none;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.699);
+    position: fixed;
+    top: 20px;
+  }
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+  
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+  
+  /* メニュー黒ポチを消す */
+  .nav_list {
+    display: list-item;
+    list-style: none;
+    padding: 70px 0px 0px 70px;
+    font-size: 50px;
+  }
+
+  .nav_container li{
+    display: flex;
+  }
+
+  .nav_list a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav_item{
+    display: flex;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav_content {
+    left: 0;/* メニューを画面に入れる */
+  }
+            header{
+                width: 100%;
+                height: 300px;
+                background: url(./img/site_header.png);
+                background-size: cover;
+                background-position: center;
+            }
+                .show{                
+                    padding: 0.5em 1em;
+                    margin: 2em 0;
+                    color: #232323;
+                    background: #fff8e8;
+                    border-left: solid 10px #ffc06e;
+                }
+                .material-symbols-outlined{
+                    text-align: left;
+                    font-size: 40px;
+                }
+                .item01 img{
+                    width: 100%;
+                }
+                }
+        </style>
+    </head>
+    <body>
+        <div>
+        </div>
+    <div class="N">
+        <header>
+            <header class="header" style="height: 300px;">
+                <!-- ヘッダーロゴ -->
+                <div class="logo"></div>
+              
+                <!-- ハンバーガーメニュー部分 -->
+                <div class="nav">
+              
+                  <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                  <input id="drawer_input" class="drawer_hidden" type="checkbox">
+              
+                  <!-- ハンバーガーアイコン -->
+                  <label for="drawer_input" class="drawer_open"><span></span></label>
+              
+                  <!-- メニュー -->
+                  <nav class="nav_content">                  
+                    <ul class="nav_list" style="padding-top: 70px; margin-top: 0px;font-size: 30px;"> 
+                        <li class="nav_item1" id="fontchange1" style="display: block; text-align: center; padding-bottom: 20px;">-メニュー-</li>
+                        <li class="nav_item1" id="fontchange2 nav-id1"><a id="fontchange2"  href="https://jkisyou.com/">ホーム</a></li>
+                        <li class="nav_item1" id="fontchange2 nav-id2"><a id="fontchange2"  href="https://business.jkisyou.com" style="display: none;">サービス情報</a></li>
+                        <li class="nav_item2" id="fontchange2 nav-id3"><a id="fontchange2"  href="https://earthquake.jkisyou.com" style="font-size: 30px;display: none;">地震情報</a></li>
+                        <li class="nav_item3" id="fontchange2 nav-id5"><a id="fontchange2"  href="https://document.jkisyou.com" style="display: none;">各種資料・データ</a></li>
+                        <li class="nav_item3" id="fontchange2 nav-id6"><a id="fontchange2"  href="https://inquire.jkisyou.com" style="display: none;">お問い合わせ</a></li>
+                        <li class="nav_item4" id="fontchange2 nav-id7"><a id="fontchange2"  href="https://agreement.jkisyou.com" style="display: none;">利用規約</a></li>
+                        <li class="nav_item6" id="fontchange2 nav-id9"><a id="fontchange2"  href="https://elive.jkisyou.com" style="display: none;">大規模地震配信</a></li>
+                      <script>
+                        $('div.flex').click(function() {
+                        location.href = $(this).find('a').attr('href');
+                        });
+                        </script>
+                    </div>
+                    </ul>
+                  </nav>
+            
+            </header>
+            <div style="height:50px;">
+            <header id="header_pc" style="position:fixed;width:100%;">
+                <div style="background-color:#0087ff80;width:100%;">
+                    <ul class="nav_list" style="padding-top: 20px; margin-top: 0px;font-size: 30px; display: flex;"> 
+                        <img src="./img/Weather Mail(icon[after]).png" style="width:70px;height: 70px;margin-left: -30px;margin-top: -20px;">
+                     <li class="nav_item1" id="fontchange2 nav-id1" style=" margin-right: 15px;list-style: none;margin-left:50px;"><a id="fontchange2" class="menu" href="https://jkisyou.com" style=" text-decoration: none; color: black;">ホーム</a></li>
+                    <li class="nav_item1" id="fontchange2 nav-id2" style=" margin-right: 15px;list-style: none;"><a id="fontchange2" class="menu" href="https://business.jkisyou.com"style=" text-decoration: none; color: black;display: none;">サービス情報</a></li>
+                    <li class="nav_item2" id="fontchange2 nav-id3" style=" margin-right: 15px;list-style: none;"><a id="fontchange2" class="menu" href="https://earthquake.jkisyou.com" style="font-size: 30px; text-decoration: none; color: black;display: none;">地震情報</a></li>
+                    <li class="nav_item3" id="fontchange2 nav-id5" style=" margin-right: 15px;list-style: none;"><a id="fontchange2" class="menu" href="https://document.jkisyou.com"style=" text-decoration: none; color: black;display: none;">各種資料・データ</a></li>
+                    <li class="nav_item3" id="fontchange2 nav-id6" style=" margin-right: 15px;list-style: none;"><a id="fontchange2" class="menu" href="https://inquire.jkisyou.com"style=" text-decoration: none; color: black;display: none;">お問い合わせ</a></li>
+                    <li class="nav_item4" id="fontchange2 nav-id7" style=" margin-right: 15px;list-style: none;"><a id="fontchange2" class="menu" href="https://agreement.jkisyou.com"style=" text-decoration: none; color: black;display: none;">利用規約</a></li>
+                    <li class="nav_item6" id="fontchange2 nav-id9" style=" margin-right: 15px;list-style: none;"><a id="fontchange2" class="menu" href="https://elive.jkisyou.com"style=" text-decoration: none; color: black;display: none;">大規模地震配信</a></li>
+                      <script>
+                        $('div.flex').click(function() {
+                        location.href = $(this).find('a').attr('href');
+                        });
+                        </script>
+                    </ul>
+                </div>
+            </header>
+            </div>
+        </header>
+        <div class="inner-block" style="height: auto;">
+          <div class="product-list">
+            <div class="product-item2 js-based2">
+                <div class="product-data">
+                  <h2 class="title"></h2>
+                  <p class="bodytext"></p>
+                </div>
+                </div>
+            </div>
+          </div>
+        <h2 style="font-size: 40px; border-bottom: 3px solid black; text-align: center;">LINEについて</h2>
+        <div style="background-color:#abff00; font-size: 30px;">
+        <p>公式LINE(WeatherMail)にて、地震の情報やサイトの情報を配信しています。</p>
+        <p>地震の情報等の配信をご希望の方は、以下のボタンにてLINEの登録を！</p>
+        <div style="text-align: center;">
+            <a href="https://lin.ee/iiaqCGL" style="text-align: center;"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+        </div>
+        </div>
+        <script src="./js/news.js"></script>
+        <div class="item02">
+                <h2 id="news">更新履歴とお知らせ</h2>
+                <p>※5分ごとに、お知らせが更新されます。すぐに更新する際は、サイトごとリロードしてください。</p>
+                <p>※スクロールできます。</p>
+                <p>※「詳しく見る」をクリックすることで、変更されたページに移動することができます。</p>
+
+
+<section class="product" style="line-height: normal;">
+    <div class="inner-block">
+      <ul class="product-list" style="padding-left:0px; list-style: none;">
+            <table id="product-table" style="width: 100%;">
+        <li class="product-item js-based">
+                  <span class="material-symbols-outlined">
+                  </span>
+              <p class="time_l1"></p>
+              <div class="line-one">
+              <p class="alternate-text"></p>
+              </div>
+              <p class="letter2" style="justify-content: center;"></p>
+              <p class="letter3" style="justify-content: right; color: gray;"></p>
+            </table>
+        </li>
+      </ul>
+    </div>
+  </section>
+            <div class="js-btn-more" style="display: block;">
+                <a>もっと見る</a>
+            </div>
+            <div class="js-btn-close" style="display: none;">
+                <a>閉じる</a>
+            </div>
+            <script src="./js/button_news_more.js"></script>
+  <style>
+    .product-data p{
+        display: inline;
+    }
+
+    .red-text{
+      color: red;
+    }
+
+    .green-text{
+      color: green;
+    }
+
+    .hide{
+      display: none;
+    }
+
+    .back-green{
+      background-color: rgb(170, 255, 0);
+    }
+
+    letter3 a{
+        color: gray;
+    }
+  </style>
+        </div>        
+        <div class="container">
+            <div class="item01">
+                <h2>サイトご利用の皆様へ</h2>
+                <div class="content_item1_flex">
+                    <figure class="image"><img src="./img/Weather Mail(icon).png" alt=""></figure>
+                    <div class="right">
+                    <p>公式サイトのご訪問ありがとうございます。</p>
+                    <p>このサイトでは、サービスのお知らせを掲載いたします。</p>
+                    </div>
+                </div>
+                    <h2 style="display:none;">提供中のサービス</h2>
+                    <div class="article_container">
+                        </div>
+                        <div class="article_item2" style="display:none;">
+                            <ul>
+                                <li>地震情報掲載サービス</li>
+                                <li>資料・データ提供ページ</li>
+                                <li>大規模地震配信サービス</li>
+                            </ul>
+                        </div>
+                    </div>
+        <footer style="background-color: #0087ff80;padding: 19px;">
+            <h2 style="text-align: center;margin: 0px;font-family: 'Zen Maru Gothic', sans-serif;">©2024 WatherMail</h2>
+        </footer>
+      </div>
+    </body>
+</html>
